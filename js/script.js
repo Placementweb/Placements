@@ -105,7 +105,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
   emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.textContent = 'Send';
-      alert('Email sent successfully!');
+      alert('Thank you for contacting us');
       document.getElementById('form').reset();
     })
     .catch((error) => {
