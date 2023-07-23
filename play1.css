@@ -14,14 +14,23 @@ body{
   align-items: center;
   justify-content: center;
   background: #ffffff;
-  background-image: url("images/bg1.webp");
+  background-image: url("images/laptopbg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .container h1 {
-    color: #0077df;
+    color: #ffffff;
     margin-left: 45%;
+    display: inline-block;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255, 255, 255, 0.297));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    border:1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    font-size: 24px;
 }
 section{
   display: flex;
@@ -43,12 +52,12 @@ section{
   margin: 20px 0;
   
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+  background: linear-gradient(135deg,rgba(255, 255, 255, 0.1),rgba(88, 122, 163, 0.414));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     
     border:1px solid rgba(255,255,255,0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(122, 108, 108, 0.37);
 }
 
 
@@ -59,36 +68,40 @@ section{
   padding: 30px;
   position: relative;
   z-index: 100;
-  border:2px solid #000000;
+  border:2px solid #fffdfd;
   width: 90%;
   height: 300px;
   margin: auto;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 20px;
   text-align: inherit;
   line-height: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.btnforquiz{
+  position:fixed;
+  bottom: 10%;
+}
 .section-title {
     font-size: 24px;
     text-align: center;
     margin-bottom: 10px;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
 }
 
 .video-list-item {
     margin-bottom: 10px;
 }
 .video-link {
-    color: #000000;
+    color: #fff700;
     text-decoration: none;
 }
 
 .video-link:hover{
     text-decoration:none;
-    color: rgb(255, 255, 255);
+    color: rgb(79, 134, 37);
 }
 .swiper-pagination{
   position: absolute;
@@ -98,37 +111,74 @@ section{
   height: 7px;
   width: 26px;
   border-radius: 25px;
-  background: #fefefe;
+  background: rgb(172, 247, 74);
 }
 
 .swiper-button-next, .swiper-button-prev{
   opacity: 0.7;
-  color: #ffffff;
+  color: rgb(172, 247, 74);
   transition: all 0.3s ease;
 }
 .swiper-button-next:hover, .swiper-button-prev:hover{
   opacity: 1;
   color: #ffffff;
 }
-@media screen and (max-width:1200px) {
-    .content{
-        width: 40%;
-    }   
+button{
+  background-color: #41400d;
+  border-radius: 10px;
+  padding: 2px 2px;
 }
-@media screen and (max-width:600px) {
-    .content{
-        width: 90%;
-    }   
+button a{
+  color: #ffffff;
+  text-decoration: none;
+}
+button a:hover{
+  color: #ff0000;
 }
 /* @media screen and (max-width:1200px) {
-    .body{
-        width: 40%;
-    }   
+  .content{
+      width: 40%;
+  }   
 }
 @media screen and (max-width:600px) {
-    .body{
-        width: 90%;
-    }   
+  .content{
+      width: 90%;
+  }   
 } */
+/* @media screen and (max-width: 1200px) {
+  .container h1 {
+    margin-left: 30%;
+  }
 
+  .swiper {
+    width: 90%;
+  }
 
+  .card .card-content {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container h1 {
+    margin-left: 20px;
+  }
+
+  section {
+    height: auto;
+    padding: 20px;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+
+  .card .card-content {
+    max-width: 100%;
+  }
+} */
+/* #quizSection{
+  margin-top: 1200px;
+  color: #fffdfd;
+  overflow-y:scroll;
+} */
