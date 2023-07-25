@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="stylee.css"> -->
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa-solid fa-bars" id="btn"></i>
+            <i class="fa-solid fa-xmark" id="cancel"></i>
+        </label>
+
+        <div class="sidebar">
+            <header>Quick Links</header>
+            <ul>
+                <li> <a href="Main.html">Home</a></li>
+                <li> <a href="play1.html">Playlists</a></li>
+                <li><a href="">Popular Channels</a></li>
+                <li><a href="#">Practice</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+        </div>
+    </header>
+
+    <div class="accordian">
+        <h1>Etiquettes</h1>
+
+        <p class="first">Etiquette is an essential aspect of professional and social interactions. When it comes to
+            placement
+            preparation,
+            it's important to develop a strong understanding of workplace etiquette to present yourself in a positive
+            and
+            professional manner. <br>
+            <b>Interview Etiquette Tips:</b> <br>
+            The interview etiquette tips provided below are designed to help you navigate the crucial moments of a
+            job
+            interview with professionalism and confidence. Mastering interview etiquette is essential as it plays a
+            significant role in making a positive impression on potential employers. By understanding and
+            implementing
+            these guidelines, you can enhance your chances of success and stand out among other candidates. From
+            appropriate attire to effective communication, these tips will help you make a lasting impression during
+            your job interviews.
+        </p>
+        <div class="contentBox">
+            <div class="label" toggle-down="collapse">DRESS CODE</div>
+            <div class="content">
+
+                <p>When it comes to interview attire, it's crucial to present yourself professionally and make a
+                    positive
+                    visual impact. Follow these guidelines for appropriate attire:</p>
+                <p><a href="dress.html" target="_blank">Know more</a>
+                </p>
+
+            </div>
+        </div>
+        <div class="contentBox">
+            <div class="label">BODY LANGUAGE</div>
+            <div class="content">
+
+                <p>During a job interview, your body language speaks volumes about your confidence, professionalism, and
+                    engagement.
+                </p>
+                <p><a href="body.html" target="_blank">Know more</a></p>
+            </div>
+        </div>
+        <div class="contentBox">
+            <div class="label">COMMUNICATION SKILLS</div>
+            <div class="content">
+
+                <p>Effective verbal communication is essential during a job interview as it allows you to convey your
+                    qualifications, personality, and interest in the position.</p>
+                <p><a href="comSkills.html" target="_blank">Know more</a></p>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        const accordian = document.getElementsByClassName('contentBox');
+        for (i = 0; i < accordian.length; i++) {
+            accordian[i].addEventListener('click', function () {
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+
+</html>
