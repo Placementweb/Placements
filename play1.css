@@ -10,7 +10,7 @@
 
 body{
   height: 100vh;
-  display: flex;
+  display:inherit;
   align-items: center;
   justify-content: center;
   background: #ffffff;
@@ -19,6 +19,30 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* Nav bar added  */
+.split nav {
+  background-color: #683e3e;
+  padding: 10px 0;
+
+}
+
+.navbar {
+  list-style-type: none;
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ended */
 .container h1 {
     color: #ffffff;
     margin-left: 45%;
@@ -35,8 +59,8 @@ body{
 section{
   display: flex;
   position:absolute;  
-  height: 550px;
-  width: 1075px;
+  height:-webkit-fill-available;
+  width: -webkit-fill-available;
   display: flex;
   align-items: center;
 }
@@ -176,9 +200,4 @@ button a:hover{
   .card .card-content {
     max-width: 100%;
   }
-} */
-/* #quizSection{
-  margin-top: 1200px;
-  color: #fffdfd;
-  overflow-y:scroll;
 } */
