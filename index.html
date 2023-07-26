@@ -2,14 +2,15 @@
 <html>
 
 <head>
-    <title>Placement and Training</title>
+    <title>PrepSprint</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body>
     <header class="header">
-        <a href="#" class="logo"><i class="fas fa-hiking"></i> Placement.com</a>
+        <a href="#" class="logo"><i class="fas fa-computer"></i> PrepSprint</a>
         <nav class="navbar">
             <div id="nav-close" class="fas fa-times"></div>
             <a href="#home">Home</a>
@@ -19,8 +20,7 @@
         </nav>
         <div class="icons">
             <div id="menu-btn" class="fas fa-bars"></div>
-            <div id="search-btn" class="fas fa-search"></div>
-
+            <div id="search-btn" class="fas fa-dash"></div>
         </div>
     </header>
 
@@ -31,16 +31,17 @@
             <label for="search-box" class="fas fa-search"></label>
         </form>
     </div>
+    
 
     <section class="home" id="home">
 
         <div class="wrapper">
 
-            <div class="box" style="background: url(images/4566.jpg) no-repeat;">
+            <div class="box" style="background: url(images/Inverted.jpg) no-repeat;">
                 <div class="content">
                     <span>never stop</span>
                     <h3>Learning</h3>
-                    <p>Placement.com provides resources and materials to help you prepare for job interviews and
+                    <p>PrepSprint provides resources and materials to help you prepare for job interviews and
                         increase your chances of getting placed.</p>
                     <a href="#category" class="btn">get started</a>
                 </div>
@@ -56,20 +57,20 @@
 
             <div class="box">
                 <img src="images/pla5.jpg" alt="">
-                <h3>Playlists</h3>
+                <h3>Playists</h3>
                 <p>Here, we offer a wide range of playlists tailored to help you excel in your programming skills. Our
                     playlists are organized by popular channels, with each channel dedicated to providing comprehensive
                     video tutorials and resources based on different programming languages.</p>
-                <a href="#" class="btn" target="_blank">Explore</a>
+                <a href="play1.html" class="btn">Explore</a>
             </div>
 
             <div class="box">
                 <img src="images/pla3.png" alt="">
-                <h3>DSA Sheets & Aptitude Test</h3>
+                <h3>DSA Sheets</h3>
                 <p>Here, we provide an extensive collection of practice sheets designed to assess and strengthen your
                     programming skills. These practice sheets are crafted to cover various concepts and offer hands-on
                     experience in solving real-world coding problems.</p>
-                <a href="#" class="btn">Explore</a>
+                <a href="dsasheets.html" class="btn">Explore</a>
             </div>
 
             <div class="box">
@@ -78,7 +79,7 @@
                 <p>successful placements require more than just technical knowledge and interview skills. here, we
                     provide guidance on communication, the necessary professional etiquette, interview protocols, and
                     soft skills to stand out in competitive placement processes.</p>
-                <a href="#" class="btn">Explore</a>
+                <a href="etiquettes.html" class="btn">Explore</a>
             </div>
 
         </div>
@@ -101,8 +102,8 @@
                         including languages like Python, C++, Java, HTML, CSS, JavaScript, and more. His tutorials are
                         beginner-friendly and aimed at helping people learn programming from scratch.</p>
                     <div class="div-btn">
-                    <a href="https://www.youtube.com/@CodeWithHarry" class="btn" target="_blank">explore now</a>
-                </div>
+                        <a href="https://www.youtube.com/@CodeWithHarry" class="btn" target="_blank">explore now</a>
+                    </div>
                 </div>
             </div>
 
@@ -116,14 +117,17 @@
                         dedicated to coding placements and study. It offers a wide range of informative videos covering
                         concepts, puzzles, interview questions, and Q&A sessions. The channel's primary objective is to
                         help viewers crack interviews and enhance their knowledge.<span id="dots1">...</span>
-                        <span id="more1" style="display: none;">Shradha's expertise brings industry insights to the content, making it a reliable resource for coding enthusiasts. Whether one is a beginner or an experienced coder,
+                        <span id="more1" style="display: none;">Shradha's expertise brings industry insights to the
+                            content, making it a reliable resource for coding enthusiasts. Whether one is a beginner or
+                            an experienced coder,
                             Apna College provides valuable learning materials and guidance for success in coding
                             placements.</span>
                     </p>
                     <button onclick="myFunction1()" id="myBtn1">Read more</button>
                     <div class="div-btn">
-                    <a href="https://www.youtube.com/@ApnaCollegeOfficial" class="btn" target="_blank">explore now</a>
-                </div>
+                        <a href="https://www.youtube.com/@ApnaCollegeOfficial" class="btn" target="_blank">explore
+                            now</a>
+                    </div>
                 </div>
             </div>
 
@@ -136,9 +140,9 @@
                     <p>Abdul Bari is a popular educational YouTube channel hosted by Abdul Bari, an educator and
                         motivational speaker. The channel primarily focuses on providing educational content for
                         children, with an emphasis on mathematics and moral values.
-                            He uses engaging and entertaining methods to help children understand complex mathematical
-                            concepts,<span id="dots2">...</span>
-                            <span id="more2" style="display: none;"> problem-solving techniques, and logical reasoning.
+                        He uses engaging and entertaining methods to help children understand complex mathematical
+                        concepts,<span id="dots2">...</span>
+                        <span id="more2" style="display: none;"> problem-solving techniques, and logical reasoning.
                             The channel covers a wide range of topics, including basic arithmetic, algebra, geometry,
                             and
                             logical puzzles. Abdul Bari's approach is to simplify difficult concepts and present them in
@@ -153,8 +157,8 @@
                     </p>
                     <button onclick="myFunction2()" id="myBtn2">Read more</button>
                     <div class="div-btn">
-                    <a href="https://www.youtube.com/@abdul_bari" class="btn" target="_blank">explore now</a>
-                </div>
+                        <a href="https://www.youtube.com/@abdul_bari" class="btn" target="_blank">explore now</a>
+                    </div>
                 </div>
             </div>
 
@@ -168,8 +172,8 @@
                         guidance and resources for students preparing for the Graduate Aptitude Test in Engineering
                         (GATE) in India. </p><br><br><br>
                     <div class="div-btn">
-                    <a href="https://www.youtube.com/@GateSmashers" class="btn" target="_blank">explore now</a>
-                </div>
+                        <a href="https://www.youtube.com/@GateSmashers" class="btn" target="_blank">explore now</a>
+                    </div>
                 </div>
             </div>
 
@@ -210,7 +214,8 @@
 
                         The channel is hosted by Jenny, an experienced educator, who covers a wide range of topics
                         related to<span id="dots4">...</span>
-                        <span id="more4" style="display: none;"> computer science and information technology.The content on the channel includes lectures, tutorials,
+                        <span id="more4" style="display: none;"> computer science and information technology.The content
+                            on the channel includes lectures, tutorials,
                             and explanations on
                             subjects such as programming languages (like C, C++, Java, Python), data structures,
                             algorithms, database management systems, computer networks, operating systems, web
@@ -223,7 +228,8 @@
                     </p>
                     <button onclick="myFunction4()" id="myBtn4">Read more</button>
                     <div class="div-btn">
-                        <a href="https://www.youtube.com/@JennyslecturesCSIT" class="btn" target="_blank">explore now</a>
+                        <a href="https://www.youtube.com/@JennyslecturesCSIT" class="btn" target="_blank">explore
+                            now</a>
                     </div>
                 </div>
             </div>
@@ -240,16 +246,17 @@
             <div class="contact-form">
                 <form id="form">
                     <div class="input-fields">
-                      <input type="text" class="input" placeholder="Name" name="name" required>
-                      <input type="email" class="input" placeholder="Email Address" name="email" pattern=".+@gmail\.com" required>
-                      <input type="text" class="input" placeholder="Phone" name="phone" required>
-                      <input type="text" class="input" placeholder="Subject" name="subject" required>
+                        <input type="text" class="input" placeholder="Name" name="name" required>
+                        <input type="email" class="input" placeholder="Email Address" name="email"
+                            pattern=".+@gmail\.com" required>
+                        <input type="text" class="input" placeholder="Phone" name="phone" required>
+                        <input type="text" class="input" placeholder="Subject" name="subject" required>
                     </div>
                     <div class="msg">
-                      <textarea placeholder="Message" name="message" required></textarea>
-                      <div class="btn1"><button type="submit">Send</button></div>
+                        <textarea placeholder="Message" name="message" required></textarea>
+                        <div class="btn1"><button type="submit">Send</button></div>
                     </div>
-                  </form>
+                </form>
             </div>
         </div>
         </div>
@@ -263,7 +270,7 @@
                 <h3>Quick links</h3>
                 <a href="#home">home</a>
                 <a href="#popular">popular</a>
-                <a href="#query">query</a>
+
             </div>
 
             <div class="box">
@@ -275,29 +282,29 @@
 
             <div class="box">
                 <h3>contact info</h3>
-                <a href="tel:+918115585868"> <i class="fas fa-phone"></i> +91 8115585868 </a>
-                <a href="mailto: placementwebform@gmail.com"> <i class="fas fa-envelope"></i>
-                    placement@gmail.com </a>
-                <a href="#"> <i class="fas fa-map"></i> Lucknow, india - 226010 </a>
+
+                <a href="https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Aplacementwebform%40gmail.com">
+                    <i class="fas fa-envelope"></i> placement@gmail.com
+                  </a>                  
+                <a href="https://goo.gl/maps/cKgHsYGktbB7H2X96" target="_blank"> <i class="fas fa-map"></i> NMAMIT,Nitte
+                    - 574110 </a>
             </div>
 
             <div class="box">
                 <h3>follow us</h3>
-                <a href="https://www.facebook.com/yash.srivastav0"> <i class="fab fa-facebook-f"></i> facebook </a>
                 <a href="https://www.instagram.com/the.back.bencherss"> <i class="fab fa-instagram"></i> instagram </a>
                 <a href="https://www.linkedin.com/in/yash-srivastav/"> <i class="fab fa-linkedin"></i> linkedin </a>
-                <a href="https://github.com/Yash-srivastav16"> <i class="fab fa-github"></i> github </a>
+                <a href="https://github.com/Placementweb" target="_blank"> <i class="fab fa-github"></i> github </a>
             </div>
         </div>
-        <div class="credit">created by <span>Team</span> | all rights reserved!</div>
+        <div class="credit">created by <span>PrepSprint</span> | all rights reserved!</div>
     </section>
     <!-- footer section ends -->
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    emailjs.init('YDbAlmI5-9AMOEvDo')
-  </script>
-      <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('YDbAlmI5-9AMOEvDo')
+    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
