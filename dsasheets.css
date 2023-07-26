@@ -5,7 +5,7 @@ body{
 nav{
     background-color: #000000;
     padding: 10px 0;
-    background-color:rgba(2, 3, 5, 0.279);
+    background-color:rgba(12, 17, 27, 0.279);
   }
 .navbar a:hover{
      color: red;
@@ -36,7 +36,7 @@ nav{
     flex-flow: wrap;
 }
 .sheets-box{
-    width: 70%;
+    width: 60%;
     height: 50px;
     background:rgba(181, 187, 199, 0.934);
     margin: 20px;
