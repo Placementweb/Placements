@@ -110,6 +110,8 @@ document.getElementById('form').addEventListener('submit', function(event) {
     })
     .catch((error) => {
       btn.textContent = 'Send';
-      alert('An error occurred while sending the email: ' + error);
+      console.error('EmailJS error:', error);
+      alert('An error occurred while sending the email. Check the console for more details.');
     });
 });
+
